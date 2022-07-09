@@ -1,0 +1,28 @@
+.pop{
+    width: 80%;
+}
+.close{
+    position: relative;
+    top: 4%;
+    left: 96%;
+    border: 1px solid black;
+    background: black;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+h2{
+    font-weight: bolder; 
+    border-bottom: 4px black solid;
+}
+
+@media (max-width:1140px){
+h2{
+font-size: 18px;
+}
+}
+@media (max-width:630px){
+    h2{
+        font-size: 15px;
+    }
+}
