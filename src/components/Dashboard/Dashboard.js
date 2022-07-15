@@ -1,12 +1,12 @@
-import axios from 'axios';
+//import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Dashboard.css"
-import Back from "../Background/Back";
-import styles from "../Login/styles.module.css";
-import {FacebookShareButton,WhatsappShareButton} from "react-share";
-import {FacebookIcon,WhatsappIcon} from "react-share";
-import Back2 from '../Background/Back2';
+/* import Back from "../Background/Back";
+import styles from "../Login/styles.module.css"; */
+import {WhatsappShareButton} from "react-share";
+//import {FacebookIcon,WhatsappIcon} from "react-share";
+//import Back2 from '../Background/Back2';
 import whatsappImg from "../../Assets/whatsappShare.png"
 
 

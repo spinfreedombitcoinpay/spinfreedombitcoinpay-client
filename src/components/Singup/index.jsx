@@ -4,10 +4,10 @@ import axios from "axios";
 import { Link,  useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 import { customAlphabet } from 'nanoid';
-import Back from "../Background/Back"
+//import Back from "../Background/Back"
 import PopupOtp from "../Popup/PopupOtp";
 import swal from "sweetalert";
-import Back2 from "../Background/Back2";
+//import Back2 from "../Background/Back2";
 
 
 const nanoid = customAlphabet('123456789', 7);

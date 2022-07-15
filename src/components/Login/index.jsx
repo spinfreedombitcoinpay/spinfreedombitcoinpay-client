@@ -2,8 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-import Back from "../Background/Back"
-import Back2 from "../Background/Back2";
+/* import Back from "../Background/Back"
+import Back2 from "../Background/Back2"; */
 
 
 const Login = () => {

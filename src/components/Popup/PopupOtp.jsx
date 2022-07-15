@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Login/styles.module.css"
+//import styles from "../Login/styles.module.css"
 import "./pop.css"
 
 export default function PopupOtp(props){

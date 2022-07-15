@@ -1,11 +1,11 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import button from '../../Assets/spinbutton.svg';
 // import wheel from '../../Assets/spinwheel.svg';
 import wheel from '../../Assets/spin.svg';
 import arrow from '../../Assets/arrow.svg';
 
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -15,11 +15,11 @@ import Confetti from "react-confetti";
 import styles from "../Login/styles.module.css"
 
 import Back2 from "../Background/Back2";
-import Back from "../Background/Back";
+//import Back from "../Background/Back";
 
 import './wheel.css';
-import axios from "axios";
-import Signup from "../Singup";
+/* import axios from "axios";
+import Signup from "../Singup"; */
 import Sound from "react-sound";
 import soundurl from "../../Assets/audio.mpeg";
 import RandomVal from "./randomVal";
@@ -28,8 +28,8 @@ import RandomVal from "./randomVal";
 function Wheel() {
 
   //for checking isLoggedIn or not
-  const [isLoggedIn, setLoggedIn] = useState(false);
-  const [myEmail, setMyEmail] = useState("");
+/*   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [myEmail, setMyEmail] = useState(""); */
   const [isOpen, setIsOpen] = useState(false);
   const myemail = localStorage.getItem("email");
   // console.log(myemail);
@@ -70,7 +70,7 @@ function Wheel() {
   //  const currentLocation = useLocation();
   // let referralId = new URLSearchParams(currentLocation.search).get("referral"); 
 
-  const location = useLocation();
+  //const location = useLocation();
   const navigate = useNavigate();
   const wheelRef = useRef();
   const buttonRef = useRef();
@@ -81,16 +81,16 @@ function Wheel() {
 
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const[text,setText]=useState(true);
+  //const[text,setText]=useState(true);
 
   const [selectedItem, setSelectedItem] = useState("Spin to Win");
   const [dialogHeading, setDialogHeading] = useState("Congratulations!!!");
   const [DialogText, setDialogText] = useState("You have won!!!");
   const [claimButtonActive, setClaimButtonActive] = useState(true);
   const [SpinAgainActive, setSpinAgainActive] = useState(false);
-  const spinning = selectedItem !== null ? 'spinning' : '';
-  let prizes = [];
-  const [prizesWon, setPrizesWon] = useState([]);
+  //const spinning = selectedItem !== null ? 'spinning' : '';
+  //let prizes = [];
+  //const [prizesWon, setPrizesWon] = useState([]);
 
   //for popup modal
   const [open, setOpen] = React.useState(false);

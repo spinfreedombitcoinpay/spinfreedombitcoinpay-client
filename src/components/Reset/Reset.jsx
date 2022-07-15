@@ -4,8 +4,8 @@ import axios from "axios";
 import swal from "sweetalert";
 import styles from "../Login/styles.module.css"
 import {useNavigate } from "react-router-dom";
-import style from "./reset.css"
-import Back2 from "../Background/Back2";
+/* import style from "./reset.css"
+import Back2 from "../Background/Back2"; */
 
 
 
