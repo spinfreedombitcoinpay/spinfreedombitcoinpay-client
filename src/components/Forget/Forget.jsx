@@ -16,12 +16,12 @@ export default function Forget(){
     let [otp, setOtp] = useState("");
     let [verifyOtp, setVerifyOtp] = useState("");
     let [timeStamp, setTimeStamp] = useState("");
-    let data = {
+   /*  let data = {
      
         email,
         otp,
       
-    }
+    } */
 
  /*    async function handleSubmit(e) {
         e.preventDefault();

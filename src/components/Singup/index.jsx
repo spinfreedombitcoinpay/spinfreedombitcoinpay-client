@@ -24,7 +24,7 @@ const Signup = () => {
 	// console.log(location);
 	// console.log(referralId);
 
-    if(referralId ==null){
+    if(referralId ===null){
 		referralId= "none"
 	}
 	const [data, setData] = useState({
@@ -53,7 +53,7 @@ const Signup = () => {
 
 	function toggle(e){
 		if(data.fname && data.lname && data.email && data.country && data.password && data.cpassword){
-			if(data.password==data.cpassword){
+			if(data.password===data.cpassword){
 		e.preventDefault();
 		setIsOpen(!isOpen);
 			}else{
@@ -115,7 +115,7 @@ const Signup = () => {
 					// const url = `http://localhost:8080/api/users/signup?referral=${referralId}`;
 					// const url = `/api/users/signup?referral=${referralId}`;
 					const url = "/api/users/signup";
-					if (data.number== ""){data.number=0;}
+					if (data.number=== ""){data.number=0;}
 					const { data: res } = await axios.post(url, data);
 					swal("User Registered!", "Please Login Now", "success");
 					navigate("/login");
@@ -140,14 +140,14 @@ const Signup = () => {
 	}
 
 
-	const handleSubmit = async (e) => {
+/* 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
 			// const url = `http://localhost:8080/api/users/signup?referral=${referralId}`;
 			// const url = `/api/users/signup?referral=${referralId}`;
 			const url = "/api/users/signup";
 			// const url = `http://localhost:8080/api/users/signup`;
-			if (data.number== ""){data.number=0;}
+			if (data.number=== ""){data.number=0;}
 			const { data: res } = await axios.post(url, data);
 			// navigate("/login",{state:{email:data.email, prizes:location.state.prizes}});
 			navigate("/login");
@@ -161,7 +161,7 @@ const Signup = () => {
 				setError(error.response.data.message);
 			}
 		}
-	};
+	}; */
 
 	
 	return (

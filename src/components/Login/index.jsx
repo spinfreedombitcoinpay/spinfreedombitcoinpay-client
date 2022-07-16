@@ -1,13 +1,14 @@
+import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 /* import Back from "../Background/Back"
 import Back2 from "../Background/Back2"; */
 
 
 const Login = () => {
-	const location = useLocation();
+	/* const location = useLocation(); */
 	// console.log(location);
 	const navigate = useNavigate();
 	const [data, setData] = useState({ email: "", password: "" });

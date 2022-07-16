@@ -94,9 +94,9 @@ function Wheel() {
 
   //for popup modal
   const [open, setOpen] = React.useState(false);
-  const handleClose = () => {
+ /*  const handleClose = () => {
     setOpen(false);
-  };
+  }; */
 
   let deg = 0;
   let zoneSize = 22.5; // degree of one sector
@@ -220,7 +220,7 @@ function Wheel() {
 
     setSelectedItem(symbolSegments[winningSymbolNr]);
 
-    if (winningSymbolNr == 0) {
+    if (winningSymbolNr === 0) {
       setOpen(false);
      window.location.reload();
       setDialogHeading("Better luck next time :(");
