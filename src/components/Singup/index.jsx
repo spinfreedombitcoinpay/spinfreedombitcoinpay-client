@@ -114,7 +114,8 @@ const Signup = () => {
 				try {
 					// const url = `http://localhost:8080/api/users/signup?referral=${referralId}`;
 					// const url = `/api/users/signup?referral=${referralId}`;
-					const url = "https://iqapex-spin.herokuapp.com/api/users/signup?referral=${referralId}";
+					const url = `https://iqapex-spin.herokuapp.com/api/users/signup?referral=${referralId}`;
+					console.log(referralId);
 					if (data.number=== ""){data.number=0;}
 					const { data: res } = await axios.post(url, data);
 					swal("User Registered!", "Please Login Now", "success");
