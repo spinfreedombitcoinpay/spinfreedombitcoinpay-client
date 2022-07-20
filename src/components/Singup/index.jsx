@@ -107,7 +107,7 @@ const Signup = () => {
 		// 	swal("OTP Expired!", "Please try again by entering new OTP", "error");
 		// }
 		if (otp !== verifyOtp) {
-			// alert("Invalid otp");
+			
 			swal("Invalid OTP!", "Please check the OTP and try again.", "error");
 		} else {
 			if(data.password===data.cpassword){
@@ -177,7 +177,7 @@ const Signup = () => {
 					</Link>
 				</div>
 				<div className={styles.right}>
-			{isOpen?<form className={styles.form_container} >			{/* onSubmit={handleSubmit} */}  {/* {()=>setIsOpen(true)} */}
+			{isOpen?<form className={styles.form_container} >			
 						<h1>Create account</h1>
 						<input
 							type = "text"
