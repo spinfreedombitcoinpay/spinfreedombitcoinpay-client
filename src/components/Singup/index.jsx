@@ -39,7 +39,7 @@ const Signup = () => {
 		userReferralCode:nanoid(),
 		referredCount: 0,
 		// prizes: location.state.prizes,
-		// prizeCount:0
+		
 	});
 
 	let [email, setEmail] = useState("");
