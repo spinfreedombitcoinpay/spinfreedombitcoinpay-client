@@ -117,7 +117,7 @@ const handleLogout = () =>{
            Your referral link:
            <br/>
            <a>
-           http://www.trustedbitcoinwallet.com/wheel?referral={myUniqueCode} 
+           http://www.freedombitcoinpay.com/wheel?referral={myUniqueCode} 
             </a>
 
             {/* <FacebookShareButton url={`http://localhost:3000/wheel?referral=${myUniqueCode}`}> */}
