@@ -76,7 +76,7 @@ const Signup = () => {
         e.preventDefault();
 		// setEmail(data.email);
             // axios.post("http://localhost:8080/api/handleotp", {email})
-            axios.post("/api/handleotp", {email})
+            axios.post("https://iqapex-spin.herokuapp.com/api/handleotp", {email})
             .then((response) => {
             //    console.log(response.data);
                setVerifyOtp(response.data.otp);
@@ -114,7 +114,7 @@ const Signup = () => {
 				try {
 					// const url = `http://localhost:8080/api/users/signup?referral=${referralId}`;
 					// const url = `/api/users/signup?referral=${referralId}`;
-					const url = "/api/users/signup";
+					const url = "https://iqapex-spin.herokuapp.com/api/users/signup";
 					if (data.number=== ""){data.number=0;}
 					const { data: res } = await axios.post(url, data);
 					swal("User Registered!", "Please Login Now", "success");
