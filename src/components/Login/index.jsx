@@ -22,7 +22,7 @@ const Login = () => {
 		e.preventDefault();
 		try {
 			// const url = "http://localhost:8080/api/auth";
-			const url = "/api/auth";
+			const url = "https://iqapex-spin.herokuapp.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);			
 			// localStorage.setItem("email", data.email);			

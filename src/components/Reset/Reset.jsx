@@ -35,7 +35,7 @@ export default function Reset(){
         }*/
             if (password === cPassword) {
                 // axios.post("http://localhost:8080/api/resetpassword",data)
-                axios.post("/api/resetpassword",data)
+                axios.post("https://iqapex-spin.herokuapp.com/api/resetpassword",data)
                     .then((response) => {
                           
                         swal("OTP Changed", "Please try logging in with new password", "success");
