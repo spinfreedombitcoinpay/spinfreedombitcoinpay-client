@@ -135,6 +135,7 @@ const handleLogout = () =>{
 
             <div>
               {/* <WhatsAppIcon fontSize='small'/> */}
+              {/* new changes */}
             Currently you have invited {myInvitedFriends}/10 friends 
             </div>
             <div>
