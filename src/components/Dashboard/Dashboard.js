@@ -50,7 +50,7 @@ const myemail = localStorage.getItem("email");
 //       console.log(err);
 //     });
     
-fetch("/api/auth/Dashboard",{
+fetch("https://iqapex-spin.herokuapp.com/api/auth/Dashboard",{
   method:"POST",
   headers:{
     'Content-type':"application/json"
