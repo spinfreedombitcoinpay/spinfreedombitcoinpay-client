@@ -259,7 +259,7 @@ function Wheel() {
 
       //  fetch("http://localhost:8080/api/auth/wheel",{
         
-      fetch("/api/auth/wheel", {
+      fetch("https://iqapex-spin.herokuapp.com/api/auth/wheel", {
         method: "POST",
         headers: {
           'Content-type': "application/json"
