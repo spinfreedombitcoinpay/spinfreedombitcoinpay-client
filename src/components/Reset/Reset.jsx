@@ -23,9 +23,9 @@ export default function Reset(){
     }
     async function handleSubmit(e) {
         e.preventDefault();
-        var today = new Date();
-        var timeStamp=today.getHours() + ":" + (today.getMinutes()+15) + ":" + today.getSeconds();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        //var today = new Date();
+        //var timeStamp=today.getHours() + ":" + (today.getMinutes()+15) + ":" + today.getSeconds();
+        //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         // if (time > timeStamp) {
         //     swal("OTP Expired!", "Please try again by entering new OTP", "error");
         // }

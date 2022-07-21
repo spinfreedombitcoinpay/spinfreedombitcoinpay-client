@@ -229,7 +229,7 @@ function Wheel() {
       setSpinAgainActive(true);
     }
 
-    if (winningSymbolNr == 1 || winningSymbolNr == 10) {
+    if (winningSymbolNr === 1 || winningSymbolNr === 10) {
       setDialogHeading("Better luck next time :(");
       setDialogText("You didn't win anything :(");
       setClaimButtonActive(false);
@@ -251,7 +251,7 @@ function Wheel() {
     setTimeout(() => {
       
       setOpen(true);
-      if (winningSymbolNr != 0 && winningSymbolNr != 1 && winningSymbolNr != 10){
+      if (winningSymbolNr !== 0 && winningSymbolNr !== 1 && winningSymbolNr !== 10){
 
       setData({ email: myemail, prizeName: symbolSegments[winningSymbolNr] });
 
