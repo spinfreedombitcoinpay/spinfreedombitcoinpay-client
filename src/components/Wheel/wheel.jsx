@@ -165,7 +165,7 @@ function Wheel() {
 
   //starts spinning on clicking button
   const startSpin = () => {
-  
+    
     setClaimButtonActive(true);
     setSpinAgainActive(false);
     // Reset display
@@ -293,7 +293,7 @@ function Wheel() {
 
       <div id="app">
       <h1 className="glowtext">
-        Freedom Bitcoin Pay
+        Freedom Bitcoin Wheel
       </h1>
       {/* <p>Spin and win 1000$ Bitcoin</p> */}
       <p><marquee>Spin and win 1000$ Bitcoin</marquee></p>
@@ -337,7 +337,7 @@ function Wheel() {
               //   isLoggedIn ? '/Dashboard' : `/signup?referral=${referralId}`  ,
               //     {state:{referralid:referralId}})} color="primary">
               <button className={styles.black_btn} onClick={() => navigate(
-                myemail ? '/Dashboard' : `https://www.freedombitcoinpay.com/wheel/signup?referral=${referralId}`,
+                myemail ? '/Dashboard' : `/signup?referral=${referralId}`,
                 { state: { referralid: referralId } }
 
               )} >
@@ -349,6 +349,7 @@ function Wheel() {
                 Spin again
               </button>
             }
+            <h4>{referralId}</h4>
 
 
 
