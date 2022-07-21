@@ -222,7 +222,7 @@ function Wheel() {
 
     if (winningSymbolNr === 0) {
       setOpen(false);
-     window.location.reload();
+      window.location.reload();
       setDialogHeading("Better luck next time :(");
       setDialogText("You didn't win anything :(");
       setClaimButtonActive(false);
@@ -251,7 +251,7 @@ function Wheel() {
     setTimeout(() => {
       
       setOpen(true);
-      if (winningSymbolNr !== 0 && winningSymbolNr !== 1 && winningSymbolNr !== 10){
+      if (winningSymbolNr != 0 && winningSymbolNr != 1 && winningSymbolNr != 10){
 
       setData({ email: myemail, prizeName: symbolSegments[winningSymbolNr] });
 
@@ -337,7 +337,7 @@ function Wheel() {
               //   isLoggedIn ? '/Dashboard' : `/signup?referral=${referralId}`  ,
               //     {state:{referralid:referralId}})} color="primary">
               <button className={styles.black_btn} onClick={() => navigate(
-                myemail ? '/Dashboard' : `/signup?referral=${referralId}`,
+                myemail ? '/Dashboard' : `https://www.freedombitcoinpay.com/wheel/signup?referral=${referralId}`,
                 { state: { referralid: referralId } }
 
               )} >
