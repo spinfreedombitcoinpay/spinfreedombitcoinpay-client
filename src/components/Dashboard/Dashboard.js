@@ -21,7 +21,7 @@ const [myInvitedFriends,setMyInvitedFriends]= useState(0);
 const [myEmail,setMyEmail]= useState("");
 // let prizeArray = [];
 const prizeref = useRef();
-const navigate= useNavigate();
+//const navigate= useNavigate();
 
 const myemail = localStorage.getItem("email");
 // axios({
@@ -58,7 +58,7 @@ fetch("/api/auth/Dashboard",{
   // body:JSON.stringify(data)
   body:JSON.stringify({email:myemail })
 }).then(res=>res.json()).then((data) =>{
-  // console.log(data)
+   console.log(data)
     if(data.success){
     setMyUniqueCode(data.data.userReferralCode);
     setMyInvitedFriends(data.data.referredCount);

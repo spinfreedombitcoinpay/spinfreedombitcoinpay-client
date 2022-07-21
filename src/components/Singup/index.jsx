@@ -10,7 +10,7 @@ import swal from "sweetalert";
 //import Back2 from "../Background/Back2";
 
 
-const nanoid = customAlphabet('123456789', 7);
+const nanoid = customAlphabet('1234567890', 7);
 
 const Signup = () => {
 	const currentLocation = useLocation();
@@ -114,8 +114,8 @@ const Signup = () => {
 				try {
 					// const url = `http://localhost:8080/api/users/signup?referral=${referralId}`;
 					// const url = `/api/users/signup?referral=${referralId}`;
-					const url = `https://iqapex-spin.herokuapp.com/api/users/signup?referral=${referralId}`;
-					console.log(referralId);
+					const url = `https://iqapex-spin.herokuapp.com/api/users/signup`;
+					console.log(userReferralCode);
 					if (data.number=== ""){data.number=0;}
 					const { data: res } = await axios.post(url, data);
 					swal("User Registered!", "Please Login Now", "success");
@@ -256,7 +256,7 @@ const Signup = () => {
 							content={
 								<div className={styles.right}>
 								<h2>
-									Press this button to send OTP
+									Press this button to send OTP {referralId}
 								</h2>
 								<button onClick={handleOtp} className={styles.black_btn}>
 											Send OTP
