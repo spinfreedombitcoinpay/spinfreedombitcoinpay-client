@@ -78,7 +78,7 @@ function Wheel() {
   const currentLocation = useLocation();
   let referralId = new URLSearchParams(currentLocation.search).get("referral");
 
-
+  console.log(referralId);
   const [isPlaying, setIsPlaying] = useState(false);
 
   //const[text,setText]=useState(true);
@@ -339,7 +339,7 @@ function Wheel() {
               <button className={styles.black_btn} onClick={() => navigate(
                 myemail ? '/Dashboard' : `/signup?referral=${referralId}`,
                 { state: { referralid: referralId } }
-
+                
               )} >
                 Claim Now!
               </button>
@@ -349,7 +349,6 @@ function Wheel() {
                 Spin again
               </button>
             }
-            <h4>{referralId}</h4>
 
 
 
@@ -357,6 +356,8 @@ function Wheel() {
         </div>
       </Dialog>
     </div>
+   
+
     <RandomVal/>
 
     </div>

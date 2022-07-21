@@ -23,7 +23,8 @@ function App() {
 			<Route path="/confirm" exact element={<Confirm />} />
 			<Route path="/Reset" exact element={<Reset />} />
 			<Route path="/Dashboard" element={<Dashboard />} />
-			<Route path="/" element={<Navigate replace to="/wheel" />} />
+			{/* <Route path="/" element={<Navigate replace to="/wheel" />} /> */}
+			<Route path="/" element={<Wheel/>} />
 		</Routes>
 	);
 }
