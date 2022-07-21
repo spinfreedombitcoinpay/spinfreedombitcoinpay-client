@@ -117,7 +117,7 @@ const handleLogout = () =>{
            Your referral link:
            <br/>
            <a>
-           http://www.freedombitcoinpay.com/wheel?referral={myUniqueCode} 
+           https://www.freedombitcoinpay.com?referral={myUniqueCode} 
             </a>
 
             {/* <FacebookShareButton url={`http://localhost:3000/wheel?referral=${myUniqueCode}`}> */}
@@ -126,7 +126,7 @@ const handleLogout = () =>{
             <FacebookIcon size={32} iconFillColor='white' round={true}/>
             </FacebookShareButton> */}
             {/* <WhatsappShareButton title="Spin and Win 1000$ Bitcoin" url={`https://bitcoinwheel.herokuapp.com/wheel?referral=${myUniqueCode}`}> */}
-            <WhatsappShareButton title="Spin and Win upto 1000$ Bitcoin" url={`https://www.freedombitcoinpay.com/wheel?referral=${myUniqueCode}`}>
+            <WhatsappShareButton title="Spin and Win upto 1000$ Bitcoin" url={`https://www.freedombitcoinpay.com?referral=${myUniqueCode}`}>
               {/* <WhatsappIcon size={32} iconFillColor='white' round={true}/> */}
               <img id="watsimg" src={whatsappImg} alt="share to whatsapp" />
             </WhatsappShareButton>
