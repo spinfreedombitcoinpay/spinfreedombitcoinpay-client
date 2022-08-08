@@ -54,8 +54,24 @@ const Signup = () => {
 	function toggle(e){
 		if(data.fname && data.lname && data.email && data.country && data.password && data.cpassword){
 			if(data.password===data.cpassword){
-		e.preventDefault();
-		setIsOpen(!isOpen);
+			e.preventDefault();
+			axios.post("https://iqapex-spin.herokuapp.com/api/handleotp", {email})
+            .then((response) => {
+            //    console.log(response.data);
+               setVerifyOtp(response.data.otp);
+               setTimeStamp(response.data.timeStamp);
+			   swal("OTP Sent!", "Please check your email.", "warning");
+			//    console.log(email);
+				var today = new Date();
+
+			 	 timeStamp = today.getHours() + ":" + (today.getMinutes()+15 )+ ":" + today.getSeconds();
+				 console.log(timeStamp);
+              	 localStorage.setItem("otp",response.data.otp);
+				  // alert("OTP sent to your gmail,please verify it");
+				
+           });
+			setIsOpen(!isOpen);
+
 			}else{
 				e.preventDefault();
 				swal("Passwords Not Matching", "Please enter same password", "error");
@@ -252,13 +268,13 @@ const Signup = () => {
 					</form>: <PopupOtp 
 							handleClose={toggle}
 							content={
-								<div className={styles.right}>
-								<h2>
+								<div id='pop' className={styles.right}>
+						{/* 		<h2>
 									Press this button to send OTP {referralId}
 								</h2>
 								<button onClick={handleOtp} className={styles.black_btn}>
 											Send OTP
-										</button>
+										</button> */}
 									<input
 											style ={{textAlign:"center",width:"50%"}}
 											className={styles.input}

@@ -17,9 +17,10 @@ export default function Back2(){
       // var date2 = new Date(); // current date
       // var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
       // var timeDiffInSecond = Math.ceil(timeDiff / 1000); // in second
-      setUsersRegistered(prev => prev+1);
-      setBitcoinsWon(prevv => (prevv) + 0.00000005);
-    },390)
+      setUsersRegistered(prev => prev+10);
+    
+    setBitcoinsWon(prev=>parseFloat(prev+0.000001).toFixed(6));
+    },790)
     return ()=>{
       clearInterval(interval);
     }
