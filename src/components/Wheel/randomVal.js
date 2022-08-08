@@ -7,9 +7,9 @@ export default function RandomVal() {
       var date1 = new Date("06/26/2018"); // mm/dd/yyyy format
   var date2 = new Date(); // current date
   var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
-  var timeDiffInSecond = Math.ceil(timeDiff / 10); // in second
+  var timeDiffInSecond = Math.ceil(timeDiff / 1500000); // in second
   const [usersRegistered,setUsersRegistered] = useState(timeDiffInSecond);
-  const [bitcoinsWon,setBitcoinsWon] = useState((timeDiff/500000));
+  const [bitcoinsWon,setBitcoinsWon] = useState((timeDiff/900000000));
   useEffect(()=>{
   var interval = setInterval( ()=>{
     // var date2 = new Date(); // current date

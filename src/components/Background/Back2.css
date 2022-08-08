@@ -11,7 +11,7 @@ img{
 .set2{
     position: absolute;
     width: 100%;
-    height: 82%;
+    height: 70vh;
     top: 0;
     left: 0;
 
@@ -95,8 +95,8 @@ img{
     left: 34%;
     animation: animate5 5s linear infinite;
 
-} */.set2 .rot2:nth-child(13){
-    top: 51%;
+} */.set2 .rot2:nth-child(1){
+    top: 46%;
     left: 28%;
     animation: animate5 3.2s linear infinite;
     animation-delay: -3.95s;
@@ -141,11 +141,24 @@ img{
     animation: animate5 2.9s linear infinite;
     animation-delay: -0.5s;
 
-} */.set2 .rot2:nth-child(20){
-    top: 49%;
+} */.set2 .rot2:nth-child(2){
+    top: 46%;
     left: 62%;
     animation: animate5 4.2s linear infinite;
     animation-delay: -1s;
+}
+.set2 .rot2:nth-child(3){
+    top: 76%;
+    left: 62%;
+
+}
+.set2 .rot2:nth-child(3) img,.set2 .rot2:nth-child(4) img{
+    width: 50px;
+}
+.set2 .rot2:nth-child(4){
+    top: 76%;
+    left: 28%;
+
 }
 /* .set2 .rot2:nth-child(21){
     top: 26%;
@@ -230,3 +243,8 @@ img{
         }
 
 }
+#randomvals {
+   font-size: 10px;
+   font-weight: lighter;
+   background-color: black;
+  }

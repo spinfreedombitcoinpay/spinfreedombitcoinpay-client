@@ -89,8 +89,6 @@ const Signup = () => {
 				 console.log(timeStamp);
               	 localStorage.setItem("otp",response.data.otp);
 				
-               
-   
            });
          
              

@@ -10,6 +10,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
+    "caniuse-lite": "^1.0.30001374",
     "mongoose": "^6.1.7",
     "nanoid": "^3.2.0",
     "react": "^17.0.2",

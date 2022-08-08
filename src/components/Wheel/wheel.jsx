@@ -14,6 +14,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Confetti from "react-confetti";
 import styles from "../Login/styles.module.css"
 
+
 import Back2 from "../Background/Back2";
 //import Back from "../Background/Back";
 
@@ -293,7 +294,7 @@ function Wheel() {
 
       <div id="app">
       <h1 className="glowtext">
-        Freedom Bitcoin Wheel
+        Freedom Bitcoin Pay
       </h1>
       {/* <p>Spin and win 1000$ Bitcoin</p> */}
       <p><marquee>Spin and win 1000$ Bitcoin</marquee></p>
@@ -344,7 +345,8 @@ function Wheel() {
                 Claim Now!
               </button>
             }
-            {SpinAgainActive &&
+            {
+            SpinAgainActive &&
               <button className={styles.black_btn} onClick={() => setOpen(false)}>
                 Spin again
               </button>
@@ -355,10 +357,13 @@ function Wheel() {
           </DialogActions>
         </div>
       </Dialog>
+      <div onClick={()=>{navigate('/login')}} className="home-login" style={{"color":"whitesmoke"}}>
+              Login Now
+            </div>
     </div>
    
 
-    <RandomVal/>
+ {/*   // <RandomVal/> */}
 
     </div>
   );
