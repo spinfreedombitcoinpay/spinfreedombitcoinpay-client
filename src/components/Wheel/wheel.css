@@ -25,8 +25,8 @@ body {
 }
 .App {
   background-image: url(../../Assets/bck2.jpeg);
-
-  height: 100vh;
+  position: initial;
+  min-height: 100vh;
   /*    display: flex;
     flex-direction: row; */
 }
@@ -167,24 +167,7 @@ body {
   z-index: -2;
   opacity: 0.6;
 }
-#stats {
-  background: black;
-  display: flex;
-  font-size: 16px;
-  /* height: 300px; */
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  /* position: absolute;
-      bottom: 0; */
-}
-#randomvals {
-  /* padding-top: 10%; */
-  padding-bottom: 4%;
-  color: white;
- /*  font-weight: bolder; */
-  padding-bottom: 4px;
-}
+
 
 @media (max-width: 1080px) {
   #app {
@@ -193,6 +176,11 @@ body {
     height: 550px;
     align-items: center;
     justify-content: center;
+  }
+  .home-login{
+    top: 10%;
+    
+    
   }
   #app p {
     position: absolute;
@@ -219,30 +207,21 @@ body {
     position: relative;
     top: -18px;
   }
-  /*  #stats{
-        position: absolute;
-        bottom: 0;
-       
-        
-      } */
-  #randomvals {
-    margin: 0;
-  }
+
 }
 
-@media (max-width: 860px) {
-  #stats {
-    position: relative;
-    left: 0;
 
-    flex-direction: column;
-  }
-  #randomvals {
-    margin: 0;
-    padding-left: 0;
-  }
-}
 @media (max-width: 660px) {
+  .home-login{
+    top: 3%;
+    left: -13%;
+  }
+  .App {
+   
+    min-height: 138vh;
+    /*    display: flex;
+      flex-direction: row; */
+  }
   #app {
     align-items: center;
     top: 30px;
@@ -276,6 +255,11 @@ body {
     position: relative;
     top: -18px;
   }
+  .home-login{
+    top: 4%;
+    
+    
+  }
 }
 
 @media (max-width: 480px) {
@@ -284,6 +268,11 @@ body {
     font-size: 2rem;
     height: 40px;
     top: -10px;
+  }
+  .home-login{
+    top: 1%;
+    width: 100px;
+    
   }
   #app {
     top: 3px;
@@ -334,9 +323,7 @@ body {
     top: 4px;
     left: -73px;
   }
-  #stats {
-    font-size: 11px;
-  }
+
   .glowtext {
     position: relative;
     top: -18px;
@@ -352,9 +339,7 @@ body {
     top: 2px;
     left: -91px;
   }
-  #stats {
-    font-size: 10px;
-  }
+
 }
 @media (max-height: 648px) and (min-width: 800px) {
   html {
@@ -390,13 +375,7 @@ body {
     padding: 0;
     top: -22px;
   }
-  /*    #stats{
-        position: absolute;
-        bottom: 0;
-      } */
-  #randomvals {
-    margin: 0;
-  }
+
   #app p {
     position: relative;
     top: -24px;
@@ -449,10 +428,13 @@ body {
 
 
 .home-login{
-  position: absolute;
-  top:85%;
-  left: 45%;
+  position: relative;
   background: #000;
+  width: 150px;
+
+
+  margin-top: -2%;
+  margin-left: 45%;
   text-shadow: 0 0 0 transparent, 0 0 10px rgb(241, 241, 80),
   0 0 20px rgb(192, 195, 5), 0 0 40px yellow, 0 0 100px rgb(161, 174, 8),
   0 0 200px yellow, 0 0 300px yellow, 0 0 500px rgb(255, 255, 53), 0 0 1000px rgb(204, 204, 30);
@@ -463,4 +445,19 @@ body {
 .home-login:hover{
   color: #f5f4ef;
   text-shadow:1px 1px white;
+}
+.bottom-home{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: -12%;
+}
+.bottom-home img{
+  width: 100px;
+}
+.vals{
+  margin-left: -10%;
+}
+.vals1{
+  margin-left: 10%;
 }

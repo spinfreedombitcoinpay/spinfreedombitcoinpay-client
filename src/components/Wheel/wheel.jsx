@@ -273,8 +273,13 @@ function Wheel() {
 
 
   }
-   
-   
+  var date1 = new Date("06/26/2018"); // mm/dd/yyyy format
+  var date2 = new Date(); // current date
+  var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
+  var timeDiffInSecond = Math.ceil(timeDiff / 1500000); // in second
+  const [usersRegistered,setUsersRegistered] = useState(timeDiffInSecond);
+  const [bitcoinsWon,setBitcoinsWon] = useState((timeDiff/900000000));
+
   return (
     <div id="scr">
       {isOpen && <Confetti />}
@@ -357,9 +362,12 @@ function Wheel() {
           </DialogActions>
         </div>
       </Dialog>
-      <div onClick={()=>{navigate('/login')}} className="home-login" style={{"color":"whitesmoke"}}>
+      <div>
+             <div onClick={()=>{navigate('/login')}} className="home-login" style={{"color":"whitesmoke"}}>
               Login Now
             </div>
+      </div>
+     
     </div>
    
 

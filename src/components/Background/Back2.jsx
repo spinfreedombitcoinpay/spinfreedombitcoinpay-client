@@ -53,8 +53,8 @@ export default function Back2(){
              <div className="rot2"><img src={require("./images/b4.png")} alt="" /></div> */}
              <div className="rot2"><img src={require("./images/free2.png")} alt="" /></div>
             {/*  <div className="rot2"><img src={require("./images/b3.png")} alt="" /></div> */}
-            <div className="rot2"><img src={require("../Wheel/btc.png")} alt="" /><h3 id='randomvals'>Total Bitcoins Won : {bitcoinsWon}</h3></div>
-            <div className="rot2"><img src={require("../Wheel/user.png")} alt="" /><h3 id='randomvals'>Total Users Registered : {usersRegistered}</h3></div>
+            <div className="rot2"><img src={require("../Wheel/btc.png")} alt="" /><h3 className='randomvals'>Total Bitcoins Won : {bitcoinsWon}</h3></div>
+            <div className="rot2"><img src={require("../Wheel/user.png")} alt="" /><h3 className='randomvals'>Total Users Registered : {usersRegistered}</h3></div>
 
      
      
