@@ -30,7 +30,7 @@ let data = {
 
 
 
-async function handleSubmit(e) {
+ function handleSubmit(e) {
     e.preventDefault();
     var today = new Date();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();

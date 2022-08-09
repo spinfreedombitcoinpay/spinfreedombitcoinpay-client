@@ -54,13 +54,14 @@ export default function Forget(){
     }
  */
 
-    async function handleOtp() {
-        /* e.preventDefault(); */
+    async function handleOtp(e) {
+        e.preventDefault();
             
             if(email){
-            //   axios.post("http://localhost:8080/api/handleotp", { email })
-              axios.post("/api/handleotp", { email })
-         .then((response) => {
+            /*  await axios.post("http://localhost:8080/api/handleotp", { email }) */
+              await axios.post("https://iqapex-spin.herokuapp.com/api/handleotp", { email })
+            .then((response) => {
+           // window.localStorage.clear();
             console.log(response.data);
             setVerifyOtp(response.data.otp);
             setTimeStamp(response.data.timeStamp);

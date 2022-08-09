@@ -8,7 +8,7 @@ export default function Back2(){
   var date1 = new Date("06/26/2018"); // mm/dd/yyyy format
   var date2 = new Date(); // current date
   var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
-  var timeDiffInSecond = Math.ceil(timeDiff / 1500000); // in second
+  var timeDiffInSecond = Math.ceil(timeDiff / 1500080); // in second
   const [usersRegistered,setUsersRegistered] = useState(timeDiffInSecond);
   const [bitcoinsWon,setBitcoinsWon] = useState((timeDiff/900000000));
 
@@ -17,9 +17,9 @@ export default function Back2(){
       // var date2 = new Date(); // current date
       // var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
       // var timeDiffInSecond = Math.ceil(timeDiff / 1000); // in second
-      setUsersRegistered(prev => prev+10);
+      setUsersRegistered(prev => prev+15);
     
-    setBitcoinsWon(prev=>parseFloat(prev+0.000001).toFixed(6));
+    setBitcoinsWon(prev=>parseFloat(prev+0.00001).toFixed(6));
     },790)
     return ()=>{
       clearInterval(interval);

@@ -4,8 +4,8 @@ import axios from "axios";
 import swal from "sweetalert";
 import styles from "../Login/styles.module.css"
 import {useNavigate } from "react-router-dom";
-/* import style from "./reset.css"
-import Back2 from "../Background/Back2"; */
+import "./reset.css"
+/* import Back2 from "../Background/Back2";  */
 
 
 
@@ -35,10 +35,10 @@ export default function Reset(){
         }*/
             if (password === cPassword) {
                 // axios.post("http://localhost:8080/api/resetpassword",data)
-                axios.post("https://iqapex-spin.herokuapp.com/api/resetpassword",data)
+                await axios.post("https://iqapex-spin.herokuapp.com/api/resetpassword",data)
                     .then((response) => {
                           
-                        swal("OTP Changed", "Please try logging in with new password", "success");
+                        swal("Password Changed", "Please try logging in with new password", "success");
                         navigate("/login");
                         
                         // console.log(response.data.password);
@@ -69,13 +69,13 @@ export default function Reset(){
             Now Reset your password
         </h1>
             <ResetPassword>
-            <input
+                <input
                         type="password"
                         onChange={(e) => {
                             setPassword(e.target.value);
                         }}
                         
-                        className="inp"
+                        id="inp"
                         value={password}
                         placeholder="New Password"
                         required
@@ -86,7 +86,7 @@ export default function Reset(){
                         onChange={(e) => {
                             setCPassword(e.target.value);
                         }}
-                        className="inp"
+                        id="inp"
                         value={cPassword}
                         placeholder="Confirm Password"
                         required
