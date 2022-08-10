@@ -7,13 +7,13 @@ import styles from "../Login/styles.module.css"
 
 export default function Forget(){
 
-    let history= useNavigate();
+   // let history= useNavigate();
     const navigate = useNavigate();
 
 
    
     let [email, setEmail] = useState("");
-    let [otp, setOtp] = useState("");
+   // let [otp, setOtp] = useState("");
     let [verifyOtp, setVerifyOtp] = useState("");
     let [timeStamp, setTimeStamp] = useState("");
    /*  let data = {

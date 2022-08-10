@@ -1,9 +1,9 @@
 import React,{useState} from "react"
-//import axios from "axios";
+
 import swal from "sweetalert";
 import styles from "../Login/styles.module.css"
 
-//import Back2 from '../Background/Back2';
+
 import { useNavigate} from "react-router-dom";
 
 
