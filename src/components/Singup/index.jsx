@@ -61,7 +61,7 @@ const Signup = () => {
                setVerifyOtp(response.data.otp);
                setTimeStamp(response.data.timeStamp);
 			   //swal("OTP Sent!", "Please check your email.", "warning");
-			   swal("OTP Sent!", "Please check your email.", "success");
+			   swal("OTP Sent!", "Please check your email inbox and spam for otp.", "success");
 			//    console.log(email);
 				var today = new Date();
 
