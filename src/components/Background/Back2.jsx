@@ -5,12 +5,12 @@ import React, { useEffect, useState } from 'react';
 
 export default function Back2(){
   
-  var date1 = new Date("06/26/2018"); // mm/dd/yyyy format
-  var date2 = new Date(); // current date
-  var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
-  var timeDiffInSecond = Math.ceil(timeDiff / 1500080); // in second
-  const [usersRegistered,setUsersRegistered] = useState(timeDiffInSecond);
-  const [bitcoinsWon,setBitcoinsWon] = useState((timeDiff/900000000));
+ // var date1 = new Date("06/26/2018"); // mm/dd/yyyy format
+ // var date2 = new Date(); // current date
+ // var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
+  //var timeDiffInSecond = Math.ceil(timeDiff / 1500080); // in second
+  const [usersRegistered,setUsersRegistered] = useState(87219);
+  const [bitcoinsWon,setBitcoinsWon] = useState(parseFloat(150));
 
   useEffect(()=>{
     var interval = setInterval( ()=>{
