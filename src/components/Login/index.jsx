@@ -3,9 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link,  useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-/* import Back from "../Background/Back"
-import Back2 from "../Background/Back2"; */
-//hello
+
 
 const Login = () => {
 	/* const location = useLocation(); */
